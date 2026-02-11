@@ -4,6 +4,18 @@ This project is a full translation of a C implementation of Flood, a grid-based 
 
 ---
 
+## File Overview
+
+| File        | Description |
+|-------------|-------------|
+| `flood.c`   | Original C reference implementation of the Flood game. Used as the behavioural baseline for the MIPS translation. |
+| `flood.s`   | Full MIPS assembly translation of `flood.c`. Implements identical game logic, control flow, and output under strict constraints. |
+| `Makefile`  | Build script for compiling and running the Flood program. Automates assembly and linking steps for the MIPS implementation. |
+| `README.md` | Project documentation describing the game, translation task, design constraints, and implementation details. |
+| `input.txt` | Sample input file used for testing and verifying game behaviour and command handling. |
+
+---
+
 ## About the Game
 
 Flood is played on a coloured grid. The player performs repeated **flood-fill operations** starting from the top-left cell, attempting to make the entire grid a single colour within a limited number of steps.
